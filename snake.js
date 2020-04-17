@@ -65,11 +65,13 @@ function Snake() {
  }
  this.checkCollision =function() {
      for(let i in this.tail){
+         //todo: fix check for going against tail.
          if(this.x===this.tail[i].x && this.y===this.tail[i].y){
             this.total=0;
             this.tail=[];
             return true;
          }
      }
+     return false;
  }
 }
