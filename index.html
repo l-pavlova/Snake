@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake</title>
 </head>
-<body>
+<body style="background-color: royalblue;">
+     <div align="center" >
+         <h1>GO!</h1>
+         <hr>
     <canvas class="canvas" height="300" width="300" style="background-color:darkslategray"></canvas>
+    <div>
+       <h3>Score: </h3>
+        <textarea id="score" draggable="false" disabled ></textarea>
+    </div>
+</div>
 </body>
+<style>
+    textarea {
+    resize: none;
+  }
+</style>
 <script type="text/javascript" src="snake.js"></script>
 <script type="text/javascript" src="fruit.js"></script>
 <script type="text/javascript" src="main.js"></script>
